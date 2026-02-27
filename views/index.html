@@ -1,0 +1,162 @@
+<!DOCTYPE html> <!--Dizer ao browser que vamos usar HTML5-->
+<html lang = "pt-PT">
+    <head>
+        <!--Esta pagina para funcionar tem de ter acesso a este CSS--> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+              rel="stylesheet" 
+              integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="../public/css/meuEstilo.css">  <!--Link para o arquivo CSS-->       
+        <!--'..' vai uma pasta para cima, sem isto não e garantido que funciona sempre-->
+        <!--Largura passa a ser a real do dispositivo-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <meta charset = "UTF-8"> <!--Definir a codificação de caracteres para UTF-8-->
+        <title>Livraria UMa</title> <!--Título da página-->
+    </head>
+
+    <body class="p-3"> <!--Pading em todos os lados da página-->
+        <div class="container">
+            <!--Cabeçalho da página, onde o título é exibido-->
+            <header>
+                <nav class="navbar">
+                    <img  
+                        class = "logo" 
+                        src = "../public/images/news_logo.png" 
+                        alt = "Logo livraria UMa"
+                    > 
+                    <a href = "index.html">HTML-CSS</a>
+                    <a href = "BootstrapExm.html">Bootstrap Grid System</a>
+                    <a href = "JavaScriptExm.html">JavaScript</a>
+                    <a href = "#livros">Livros</a>
+
+                </nav>
+            </header>
+            <table class="tabela">
+                <tr>
+                    <td class="color"><u>A</u></td>
+                    <td></td>
+                    <td class="color"><em>É</em></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="color"><strong>UMa</strong></td>
+                    <td></td>
+                    <td class="color">Nossa!</td>
+                </tr>
+            </table>
+            <div>   
+                <h1>Bem-vindo à Livraria UMa</h1> 
+                <section id="livros" class="container">
+                    <div class="row">
+                        <h2>Livros</h2> 
+                        <article class="col-12 col-md-4 mb-4">
+                            <h3>Livro 1</h3> 
+                            <img class="img-fluid mx-auto d-block" src = "../public/images/livros/livro1.png" alt = "Capa do livro 1">
+                            <p>Lorem</p> 
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/afzbTTuTYhw" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <button>Adicionar ao carrinho</button>
+                        </article>
+                        <article class="col-12 col-md-4 mb-4">
+                            <h3>Livro 2</h3> 
+                            <img class="img-fluid mx-auto d-block" src = "../public/images/livros/livro2.png" alt = "Capa do livro 2">
+                            <p>Lorem</p> 
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/vY2SrgpQVIU" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <button>Adicionar ao carrinho</button>
+                        </article>
+                        <article class="col-12 col-md-4 mb-4">
+                            <h3>Livro 3</h3> 
+                            <img class="img-fluid mx-auto d-block" src = "../public/images/livros/livro3.png" alt = "Capa do livro 3">
+                            <p>Lorem</p> 
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/7bRE5CCciDs" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <button>Adicionar ao carrinho</button>
+                        </article>
+                        <article class="col-12 col-md-4 mb-4">
+                            <h3>Livro 4</h3> 
+                            <img class="img-fluid mx-auto d-block" src = "../public/images/livros/livro4.png" alt = "Capa do livro 4">
+                            <p>Lorem</p> 
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/_tWBKpijOU8" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <button>Adicionar ao carrinho</button>
+                        </article>
+                        <article class="col-12 col-md-4 mb-4">
+                            <h3>Livro 5</h3> 
+                            <img class="img-fluid mx-auto d-block" src = "../public/images/livros/livro5.png" alt = "Capa do livro 5">
+                            <p>Lorem</p> 
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/bayWihAbUJY" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <button>Adicionar ao carrinho</button>
+                        </article>
+                        <article class="col-12 col-md-4 mb-4">
+                            <h3>Livro 6</h3> 
+                            <img class="img-fluid mx-auto d-block" src = "../public/images/livros/livro6.png" alt = "Capa do livro 6">
+                            <p>Lorem</p> 
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/bel5pcodm_0" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <button>Adicionar ao carrinho</button>
+                        </article>
+                        <article class="col-12 col-md-4 mb-4">
+                            <h3>Livro 7</h3> 
+                            <img class="img-fluid mx-auto d-block" src = "../public/images/livros/livro7.png" alt = "Capa do livro 7">
+                            <p>Lorem</p> 
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/rBq3IvW6j44" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <button>Adicionar ao carrinho</button>
+                        </article>
+                        <article class="col-12 col-md-4 mb-4">
+                            <h3>Livro 8</h3> 
+                            <img class="img-fluid mx-auto d-block" src = "../public/images/livros/livro8.png" alt = "Capa do livro 8">
+                            <p>Lorem</p> 
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/v9YBLB68-E8" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <button>Adicionar ao carrinho</button>
+                        </article>
+                    </div>
+                </section>    
+            <p><strong>Aqui poderá encontrar livros incríveis!</strong></p>            
+            </div>          
+        </div>
+        <div class="footer-container">
+                <footer>
+                    <p>Universidade da Madeira 2025–2026</p>
+                </footer>
+        </div>
+    <!--Pode dar erro se este script for posto no in inicio-->
+    <script src="../views/JavaScriptExm.html"></script>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+:root{
+    --bottom-margin: 10px;
+}
+
+/* =========================
+   LOGOTIPO - classe para estas especificações
+========================= */
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 0 20px; /* 0 - cima baixo, 20px - esquerda direita */
+}
+
+/* =========================
+   BARRA DE NAVEGAÇÃO
+========================= */
+
+.navbar {
+    background-color: lightgray;
+    overflow: hidden; /* Mesmo que não caiba o conteúdo, não vai expandir a barra */
+}
+
+/* Links filhos diretos da navbar */
+.navbar > a { /* ou pela tag: nav > a */
+    float: left;
+    color: black;
+    margin: 14px 0 16px; /* 14px - cima, 0 - esquerda direita, 16px - baixo */
+    text-decoration: none;
+}
+
+.navbar > a:active {
+    /* !important rebenta com as hierarquias! */
+    color: blue !important; /* !important para garantir que esta regra tem prioridade sobre outras regras */
+}
+
+/* Hover */
+.navbar > a:hover {
+    color: blueviolet;
+}
+
+/* =========================
+   TABELA
+========================= */
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 20px;
+    border: solid lightblue;
+    text-align: center;
+}
+
+/* Fundo apenas para td com classe color */
+td.color {
+    background-color: lightblue;
+}
+
+/* =========================
+   IMAGENS DOS LIVROS
+========================= */
+
+img.center { /* aplicado apenas as tags img */
+    display: block;
+    margin: auto;
+}
+
+/* animação */
+/*section#livros article img{ /* Qualquer img dentro de article dentro da section livros*/
+/*    width: 100px;
+    height: 100px;
+    transition: width 200ms, height 400ms; 
+}
+
+section#livros article img:hover{ /* Qualquer img dentro de article dentro da section livros*/
+/*    width: 200px;
+    height: 200px;
+} */
+
+/* =========================
+   HEADERS
+========================= */
+
+h1, h2, h3, h4, h5, h6 {
+    color: grey;
+    text-align: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    position: fixed;
+    bottom: 0; /* Ajuste para evitar sobreposição */
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}   
+
+body {
+    margin-bottom: var(--bottom-margin);
+}
+
+/* =========================
+   MEDIA QUERY 540px
+========================= */
+
+@media (max-width: 540px) {
+
+    /* Links da navbar ocupam 100% */
+    .navbar > a {
+        float: left;
+        width: 100%;
+        display: block;
+    }
+
+    /* Esconder logótipo */
+    .logo {
+        display: none;
+    }
+
+    /* Esconder tabela */
+    .tabela {
+        display: none;
+    }
+}
+
+/* Iframes responsivos */
+iframe {
+    width: 100%;
+    height: auto;
+}
