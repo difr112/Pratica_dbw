@@ -67,16 +67,16 @@ img.center { /* aplicado apenas as tags img */
 }
 
 /* animação */
-/*section#livros article img{ /* Qualquer img dentro de article dentro da section livros*/
-/*    width: 100px;
+section#livros article img{ /* Qualquer img dentro de article dentro da section livros*/
+    width: 100px;
     height: 100px;
     transition: width 200ms, height 400ms; 
 }
 
 section#livros article img:hover{ /* Qualquer img dentro de article dentro da section livros*/
-/*    width: 200px;
+    width: 200px;
     height: 200px;
-} */
+} 
 
 /* =========================
    HEADERS
@@ -127,6 +127,15 @@ body {
     .tabela {
         display: none;
     }
+
+    /* Não efetuar a animação*/
+    section#livros article img{ /* Qualquer img dentro de article dentro da section livros*/       
+        transition: none; 
+    }
+
+    section#livros article img:hover{ /* Qualquer img dentro de article dentro da section livros*/
+        transform: none;
+    } 
 }
 
 /* Iframes responsivos */
